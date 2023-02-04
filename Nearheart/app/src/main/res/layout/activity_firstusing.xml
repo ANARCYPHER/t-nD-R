@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.FirstUseActivity"
+    android:orientation="vertical"
+    android:background="@drawable/lovd"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="bottom"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_nearheart_withoubback"
+                    />
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="nearheart"
+                    android:gravity="center_vertical"
+                    android:textSize="40sp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                android:id="@+id/cbConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textSize="16sp"
+                android:text="@string/by_clicking_on_sign_in_you_agree_to"
+                android:textColor="@color/colorWhite"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_of_service_privacy_policy"
+                android:id="@+id/btnPrivacyPolicyFirstUsing"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            >
+
+            <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_with_number_phone"
+                android:textColor="@color/colorBlackOne"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="false"
+                android:id="@+id/btn_phone_login"
+                android:background="@drawable/border_ronded_white"
+                android:drawableStart="@drawable/ic_phone" />
+
+            <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_with_facebook"
+                android:textColor="@color/colorBlackOne"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/fb_icon"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:id="@+id/btn_fb_login"
+                android:background="@drawable/border_ronded_white"
+                android:drawableStart="@drawable/fb_icon" />
+
+
+
+            <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_ronded_barared"
+                android:text="@string/sign_in"
+                android:id="@+id/btnSigninFirstUsing"
+                android:textSize="17sp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+
+                />
+
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_a_account"
+                android:textColor="@color/colorGrayPure"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/sign_up"
+                android:textSize="17sp"
+                android:textColor="@color/colorGrayPure"
+                android:id="@+id/btnSignupFirstUsing"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/border_ronded_yellow"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

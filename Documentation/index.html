@@ -1,0 +1,361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Nearheart Documentation Template v9.42</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Nearheart Android App&rdquo; Documentation by &ldquo;RIFCODE&rdquo; v9.42</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Nearheart&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Update v9.42 : 05/15/2022<br>
+					By: RIFCODE<br>
+					Email: <a href="mailto:rifcode39@gmail.com">rifcode39@gmail.com</a><br>
+					WhatsApp : +212 657019933
+                    </strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/rifcode">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">Create Firebase Android project</a></li>
+			<li><a href="#cssFiles">Config User Authentication Email Adress</a></li>
+			<li><a href="#auth_fb">Config User Authentication Facebook Account</a></li>
+			<li><a href="#auth_phone">Config User Authentication Phone Number</a></li>
+			<li><a href="#javascript">Config database rules</a></li>
+			<li><a href="#changename">How to change app name</a></li>
+			<li><a href="#changepackage">How to change package name</a></li>
+			<li><a href="#changeicon">How to change app icon</a></li>
+			<li><a href="#ads_admob_id">How to config ads Admob</a></li>
+			<li><a href="#ads_facebook_id">How to config ads Facebook</a></li>
+			<li><a href="#publishplaystore">Publish app in play store</a></li>
+		</ol>
+		
+		<h2 id="toc2" class="alt">Table of Contents ADMIN PANEL WEB APP </h2>
+		<ol class="alpha">
+			
+			<li><a href="#create_web_app">Create Web App To Your Project Firebase</a></li>
+			<li><a href="#config_web_app">Config Javascript Firebase Project</a></li>
+			<li><a href="#fb_auth_email">Config Authentication Login Email</a></li>
+			<li><a href="#fb_create_user">Create New Login</a></li>
+			<li><a href="#hosting">How to host your app in firebase.</a></li>
+			
+		</ol>
+
+		<hr>
+        
+		
+		<h3 id="htmlStructure"><strong>A) Firebase Android project</strong> - <a href="#toc">top</a></h3>
+		<p>- First you need to create firebase android project and get an json file from your firebase dashbord setting app :</p>
+		
+		<img src="assets/images/create%20fireproject.PNG" alt="create Firebase roject" /><br><br>
+
+        
+		<p style="color: red; font-size: 20px">* Don't forget to put your file json in android project.</p>
+
+		<h3 id="cssFiles"><strong>B) Config User Authentication</strong> - <a href="#toc">top</a></h3>
+        
+		<p>Firebase User Authentication following steps :</p> 
+
+		<h5>1- go to project dashbord</h5>  
+                        		<img src="assets/images/auth%20firebase.PNG" alt="create Firebase roject" /><br><br>
+        
+        <h5>-2 Authentification -> sign-in method -> select email/password and enabled.</h5>  
+								<img src="assets/images/auth%20firebase%202.PNG" alt="create Firebase roject" /><br><br>
+								        
+		<h3 id="auth_fb"><strong>C) Config User Authentication FACEBOOK</strong> - <a href="#toc">top</a></h3>
+		<img src="assets/images/image fb login1.PNG" alt="create Firebase roject" /><br>
+		<img src="assets/images/fb login  2.PNG" alt="create Firebase roject" /><br>
+
+		<h4>LINKS :</h4>
+		<a href="https://developers.facebook.com/">Facebook for Developers</a><br><br>
+		<p>When you sign in in faceook developer and create app and following sdk facebook there, than put id app, id protocol shema here</p>
+		<img src="assets/images/ads3.PNG" alt="create Firebase roject" /><br>
+		<img src="assets/images/fb login 3.PNG" alt="create Firebase roject" /><br>
+
+		<br><br><br><br>
+
+		<h3 id="auth_phone"><strong>D) Config User Authentication Phone number</strong> - <a href="#toc">top</a></h3>
+		<img src="assets/images/auth phone.PNG" alt="create Firebase roject" /><br>
+
+
+		<h3 id="javascript"><strong>E) Config database rules</strong> - <a href="#toc">top</a></h3>
+		
+		<h5>-1 go to project dashbord</h5>
+		<h5>-2 Database -> Create database -> next -> next -> Choose Realtime Database -> rules</h5>
+                		<img src="assets/images/databse%20firebase.PNG" alt="create Firebase roject" />
+
+        <h5>-3 Replace this code :</h5>
+		<p>--------------------------------------------------------------
+
+<br>{<br>
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */<br>
+  "rules": {<br>
+    ".read": false,<br>
+    ".write": false<br>
+  }<br>
+}<br>
+<br>
+to<br>
+<br>
+{<br>
+  "rules": {<br>
+    ".read": true,<br>
+    ".write": true<br>
+  }<br>
+}<br>
+<br>
+-------------------------------------------------------------</p>
+		
+        
+       <h3 id="changename"><strong>F) How to change app name</strong> - <a href="#toc">top</a></h3>
+                		<img src="assets/images/change%20app%20name%202.PNG" alt="changename" /><br><br>
+
+        		<img src="assets/images/changing%20app%20name.PNG" alt="changename" /><br><br>
+        
+       <h3 id="changepackage"><strong>G) How to change package name</strong> - <a href="#toc">top</a></h3>
+                
+                <p>
+For example, if you want to change com.example.app to my.awesome.game, then:
+
+In your Project pane, click on the little gear icon ( Gears icon )
+
+Uncheck / De-select the Compact Empty Middle Packages option
+                    
+                    
+                    
+                            	<img src="assets/images/3j5pzNa.png" alt="changingicon" /><br><br>
+       
+                    
+               <p>Your package directory will now be broken up in individual directories</p>
+
+<p>Individually select each directory you want to rename, and:</p>
+
+        <p>Right-click it</p>
+<p>Select Refactor</p>
+<p>Click on Rename</p>
+<p>In the Pop-up dialog, click on Rename Package instead of Rename Directory</p>
+<p>Enter the new name and hit Refactor</p>
+<p>Click Do Refactor in the bottom</p>
+<p>Allow a minute to let Android Studio update all changes</p>
+<p>Note: When renaming com in Android Studio, it might give a warning. In such case, select Rename All</p>
+
+               	<img src="assets/images/PW9oZll.png" alt="changingicon" /><br><br>
+
+                    <p>Now open your Gradle Build File (build.gradle - Usually app or mobile). </p>
+                        <p>Update the applicationId in the defaultConfig to your new Package Name and Sync Gradle, if it hasn't already been updated automatically:</p>
+                    
+                                   	<img src="assets/images/hMx08b7.png" alt="changingicon" /><br><br>
+
+                    
+<p>You may need to change the package= attribute in your manifest.</p>
+
+<p>Clean and Rebuild.</p>
+
+<p>Done! Anyway, Android Studio needs to make this process a little simpler.</p>
+
+
+        
+       <h3 id="changeicon"><strong>H) How to change app icon</strong> - <a href="#toc">top</a></h3>
+                		<img src="assets/images/changing%20icon%202.PNG" alt="changename" /><br><br>
+
+               	<img src="assets/images/changing%20icon.PNG" alt="changingicon" /><br><br>
+
+				   <h3 id="ads_admob_id"><strong>I) Config Admob ADS ID</strong> - <a href="#toc">top</a></h3>
+				   <p>see pictures : </p>
+				   <img src="assets/images/ads3.PNG" alt="create Firebase roject" /><br>
+				   <img src="assets/images/ads.PNG" alt="create Firebase roject" /><br>
+				   <img src="assets/images/ads4.PNG" alt="create Firebase roject" /><br>
+				   <p style="font-size: large;">Put your app id here : see pic</p>
+				   <img src="assets/images/ads 2.PNG" alt="create Firebase roject" /><br><br><br>
+
+				   <h3 id="ads_facebook_id"><strong>J) Config Facebook ADS ID</strong> - <a href="#toc">top</a></h3>
+				   <p>see pictures : </p>
+				   <img src="assets/images/ads3.PNG" alt="create Firebase roject" /><br>
+				   <img src="assets/images/ads fb.PNG" alt="create Firebase roject" /><br>
+				  <br><br><br>
+
+
+               <h3 id="publishplaystore"><strong>K) Publish app in playstore</strong> - <a href="#toc">top</a></h3>
+
+       
+        <h3>1. Get your app information ready</h3>
+          <p> Log into the Google Play Console using your Play publisher account. To create an application, select All applications in the left-hand menu. Click on Create Application in order to begin creating your app. Choose a language and enter a title for your app (limit of 50 characters). And continue by clicking Create. On the following page shown below, you’ll add all the relevant information about your app.</p>
+
+ 
+
+               	<br><br><img src="assets/images/playstore1.png" alt="changingicon" /><br><br>
+
+ 
+<p><strong>Short description:</strong> A brief summary of your app. This will be shown on the app’s Google Play Store listing and is critical for convincing people to download your app. Pack the most important and exciting information in the first three lines.</p>
+    
+<p><strong>Full description:</strong> Go into more details about your app. You have a maximum of 4000 characters. Highlight benefits and key features. This is shown when a user opens your app’s store listing.
+Screenshots: Essential to show your app in action. Click Add screenshot and upload screenshots of the app. You are required to upload at least two screenshots, but aim for seven or the maximum of eight for the best results and put the best ones at the beginning. To be featured in the Play Store’s “Designed for tablets” list, upload screenshots of your app running on a 7-inch and 10-inch tablet.</p>
+    
+<p><strong>Hi-res icon:</strong> This is the icon that will be shown in Google Play Store and on your users’ devices when downloaded
+Feature graphic: This is labeled as optional even though it’s essential since your app cannot be featured anywhere on the Google Play Store without a feature graphic. Aim for a bold, vivid, and simple image that promotes your brand with minimal writing.</p>
+    
+<p><strong>Video link:</strong> You can also add a link to a video of your app. This can be a YouTube link.
+Application type: Whether it’s an app or a game
+Category: Business, travel, education, etc.
+Make sure all your information is correct in the contact details and add anything missing. We’ll get back to the content rating, which requires you to fill out a questionnaire. Click on Save Draft to save your app information and let’s move onto the next steps.
+</p>
+ 
+
+<h3>2. Upload the APK or app bundle files for your app</h3>
+<p>After you’ve made sure of all the prerequisites (unique bundle ID, signed app release, and expansion files in the case of a large app) needed to release your app, it’s time to actually upload the files before release. To do this, go to the App releases section from the left menu.</p>
+
+ 
+
+               	<br><br><img src="assets/images/playstore2.png" alt="changingicon" /><br><br>
+
+ 
+
+<p>You are given the option of the type of release. Production is the final release to submit a live version of your final app to the Google Play store. Beta and Alpha releases give you the opportunity to test your app and receive valuable feedback to make improvements to your app before a final release. Instabug gives you the best tools for receiving the richest feedback from your users, all with only one line of code.</p>
+ 
+
+<p>After selecting the type of release, you will be redirected to the next page. Click on Create Release to go to the New release to production page.</p>
+
+ 
+
+               	<br><br><img src="assets/images/playstore3.png" alt="changingicon" /><br><br>
+
+ 
+
+<p>Choose whether you want to use Google Play app signing on your app or click on OPT-OUT to ignore and sign in locally.</p>
+<p>Click on Browse Files.</p>
+<p>Choose your app’s APK or App Bundle files to upload.</p>
+<p>Click on Review at the bottom right of the page. This confirms and submits your app’s release information.</p>
+<p>Before sending your app out into the wild, it needs a content rating and a distribution and pricing plan.</p>
+
+ 
+
+<h3>3. Set your app’s content rating</h3>
+ 
+
+               	<br><br><img src="assets/images/playstore4.png" alt="changingicon" /><br><br>
+
+ 
+
+<p>To set your app’s content rating, you will need to go to the Content rating page from the left menu.</p>
+
+<p>Click on Continue.</p>
+<p>Enter your email address and confirm it.></p>
+<p>From the options, select your app category.</p>
+<p>Go ahead and start filling in the survey for your app rating. This is basically to help Google identify if there is any explicit content in your app.</p>
+<p>Click on Save Questionnaire.</p>
+<p>Click on Calculate Rating. This will show you the app rating your app will have on the Play Store.</p>
+<p>Click on Apply Rating to confirm your app’s content rating.</p>
+ 
+
+<h3>4. Set pricing and a distribution plan</h3>
+ 
+
+               	<br><br><img src="assets/images/playstore5.png" alt="changingicon" /><br><br>
+
+ 
+
+<p>If you plan to have users pay for the app you will need to set the pricing. Also, your app can be distributed to selected countries instead of a worldwide release. Go to the Pricing and distribution page from the left menu.</p>
+
+ 
+
+<p>Select whether you want your app to be FREE or PAID. For more details on the paid option check here.</p>
+<p>Select Available for the countries you want your app released in. Select the Unavailable option otherwise.</p>
+<p>If your app is suitable for children under the age of 13, select Yes for Primary Child-Detected. Otherwise, select No.</p>
+<p>If your app contains ads, check Yes for Contains ads. If not, check No.</p>
+ 
+
+<h3>5. Publish your app</h3>
+ 
+
+               	<br><br><img src="assets/images/playstore6.png" alt="changingicon" /><br><br>
+
+ 
+
+<p>Now that the entire checklist is done and we’re ready to release the app, go back to App releases from the left menu.</p>
+
+<p>Click on Manage Production (otherwise if you’re releasing a beta or alpha build select that instead).</p>
+<p>Click on Edit Release.</p>
+<p>Then click on Review at the bottom right on the page.</p>
+<p>Click Start rollout to production to finalize.</p>
+<p>Finally, click Confirm when prompted.</p>
+<p>Congratulations! You’ve now successfully rolled out your app, and it will send all its information to Google for review.</p>
+<p>Within two hours your app should be shipped and published on the Google Play store in the countries that you’ve selected.</p>
+        
+	
+<h1>ADMIN PANEL</h1><br><br><br>
+<h3 id="create_web_app"><strong>A) Create Web App To Your Project Firebase</strong> - <a href="#toc2">top</a></h3>
+<img src="assets/images/webapp1.PNG" alt="changingicon" />
+<img src="assets/images/webapp2.PNG" alt="changingicon" />
+<img src="assets/images/webapp3.PNG" alt="changingicon" />
+<img src="assets/images/webapp4.PNG" alt="changingicon" />
+<br><br>
+<h3 id="config_web_app"><strong>B) Config Javascript Firebase Project</strong> - <a href="#toc2">top</a></h3>
+
+<img src="assets/images/firebase 1 config web.PNG" alt="changingicon" />
+<img src="assets/images/put 1.PNG" alt="changingicon" /><br><br>
+
+<h3 id="fb_auth_email"><strong>C) Config User Authentication</strong> - <a href="#toc">top</a></h3>
+        
+<p>Firebase User Authentication following steps :</p> 
+
+<h5>1- go to project dashbord</h5>  
+						<img src="assets/images/auth%20firebase.PNG" alt="create Firebase roject" /><br><br>
+
+<h5>-2 Authentification -> sign-in method -> select email/password and enabled.</h5>  
+						<img src="assets/images/auth%20firebase%202.PNG" alt="create Firebase roject" /><br><br>
+
+
+<h3 id="fb_create_user"><strong>D) Create New User</strong> - <a href="#toc2">top</a></h3>
+
+<img src="assets/images/user 1.PNG" alt="changingicon" />
+<img src="assets/images/user 2.PNG" alt="changingicon" /><br><br>		
+<h5>1- open login.html and change 1  and  2 with your login : </h5> 
+<img src="assets/images/user 3.PNG" alt="changingicon" />
+<img src="assets/images/user 4.PNG" alt="changingicon" /><br><br>	
+
+<h3 id="hosting"><strong>E) Hosting admin panel</strong> - <a href="#toc2">top</a></h3>
+<h5>1- copy your path admin panel in Command Prompt and add "cd" in first see image : </h5> 
+<img src="assets/images/host 1.PNG" alt="changingicon" /><br><br>
+<img src="assets/images/host 2.PNG" alt="changingicon" /><br><br>		
+<img src="assets/images/host 3.PNG" alt="changingicon" /><br><br>
+<img src="assets/images/host 4.PNG" alt="changingicon" /><br><br>
+<h5>Deploy complete. test now your admin panel</h5> 
+<img src="assets/images/host 5.PNG" alt="changingicon" /><br><br>	
+		
+		<p class="append-bottom alt large"><strong>RIFCODE</strong></p>
+                
+		<p><a href="#toc">Go To Table of Contents</a></p>
+        
+        <p>Now your app is seccussfully completed run enjoy.</p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

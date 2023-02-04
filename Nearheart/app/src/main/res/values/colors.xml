@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED4C67</color>
+    <color name="colorPrimaryDark">#ED4C67</color>
+    <color name="colorAccent">#ED4C67</color>
+
+    <color name="colorBlue">#5faad7</color>
+    <color name="colorGold">#D4AF37</color>
+    <color name="colorGreen">#27ae60</color>
+    <color name="colorGry">#cbc7c7</color>
+    <color name="colorBlueForce">#084c9c</color>
+    <color name="colorBluePure">#34495e</color>
+    <color name="colorBluePlus">#2c3e50</color>
+    <color name="colorRed">#e74c3c</color>
+    <color name="colorRedForce">#c0392b</color>
+    <color name="colorRedBara">#ED4C67</color>
+    <color name="colorWhite">#fff</color>
+
+    <color name="colorGryForce">#95a5a6</color>
+    <color name="colorAsbestos">#7f8c8d</color>
+
+    <color name="colorBlueDarker">#1a53ff</color>
+    <color name="colorGryFix">#f3f3f1</color>
+    <color name="colorBluePremiere"> #3366ff</color>
+    <color name="colorBlueTwo">#008cc9</color>
+    <color name="colorBlackOne">#333333</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="colorBanaphsagy">#9b59b6</color>
+    <color name="colorDeepPurple">#673AB7</color>
+
+    <color name="color_yellow">#ffff00</color>
+    <color name="color_GreyE">	#E8E8E8</color>
+    <color name="colorBlackPure">#000</color>
+    <color name="colorGrayPure">#424242</color>
+    <color name="whiteLow">#F4F4F4</color>
+
+</resources>

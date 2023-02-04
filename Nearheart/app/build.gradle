@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    defaultConfig {
+        applicationId "com.rifcode.nearheart"
+        minSdkVersion 19
+        targetSdkVersion 32
+        versionCode 40
+        versionName "9.42"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'id.zelory:compressor:2.0.0'
+    implementation 'com.hbb20:ccp:2.2.9'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.5.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.lorentzos.swipecards:library:1.0.9'
+
+    // firebase
+    implementation 'com.google.firebase:firebase-auth:21.0.3'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.firebase:firebase-auth:21.0.3'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:1.2.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.2'
+    implementation 'com.google.firebase:firebase-messaging:23.0.4'
+    //
+
+    // Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+
+    // Add the Firebase Crashlytics SDK.
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.10'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.commit451:PhotoView:1.2.4'
+
+    implementation 'com.facebook.android:audience-network-sdk:6.7.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.github.mohammadatif:Animatoo:master'
+    implementation 'com.facebook.android:facebook-login:5.15.0'
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation project(':nativetemplates')
+
+    //google api geo
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'

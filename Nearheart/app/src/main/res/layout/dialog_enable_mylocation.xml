@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border_white_barared_dialogs"
+    android:padding="25dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/ops"
+            android:textSize="20sp"
+            android:textColor="@color/colorGrayPure"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mylocation"
+            />
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBook
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/must_enable_location"
+        android:textSize="18sp"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_alpha_40"
+        />
+
+    </LinearLayout>
+
+
+        <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/try_again"
+            android:background="@drawable/shadow_barared"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorRedBara"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btnYesDMylocation"
+            />
+
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up"> تسجيل الدخول باليميل</string>
+    <string name="privacy_policy">سياسة خاصة</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="don_t_have_a_account">ليس لديك حساب؟</string>
+    <string name="you_are">أنت</string>
+    <string name="women">امرأة</string>
+    <string name="man">رجل</string>
+    <string name="by_clicking_on_sign_up_you_agree_to">من خلال النقر فوق الاشتراك ، أنت توافق على </string>
+    <string name="by_clicking_on_sign_in_you_agree_to">بالنقر على تسجيل الدخول ، أنت توافق على </string>
+    <string name="username">اسم المستخدم</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_media">إضافة الصور</string>
+    <string name="edit_info">تعديل الملف</string>
+    <string name="settings">اعدادات</string>
+    <string name="age">سن</string>
+    <string name="new_likes">الإعجابات الجديدة</string>
+    <string name="all">الكل</string>
+    <string name="new_matches">تطابقات جديدة</string>
+    <string name="messages">رسائل</string>
+    <string name="username_already_exist">اسم المستخدم موجود بالفعل. اختيار آخر</string>
+    <string name="pb_wait_forsignup">في انتظار التسجيل …</string>
+    <string name="pb_wait_forsignin">في انتظار تسجيل الدخول …</string>
+    <string name="auth_failed">فشل التسجيل</string>
+    <string name="auth_success">نجاح التسجيل</string>
+    <string name="help_isEmpty">جميع الخانات يجب أن لا تكون فارغة.</string>
+    <string name="help_auth">كلمة المرور أو البريد الإلكتروني غير صحيح حاول مرة أخرى.</string>
+    <string name="help_passwordShould">يجب أن تكون كلمة المرور 6 أحرف على الأقل.</string>
+    <string name="help_usernameShould">يجب أن يكون اسم المستخدم 6 أحرف على الأقل.</string>
+    <string name="help_conditions">قبل التسجيل ، هل توافق على الشروط والأحكام؟</string>
+    <string name="welcome">أهلا بك</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="account_settings">إعدادت الحساب</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="discovery_settings">اكتشاف الاعدادات</string>
+    <string name="live_in">العيش في</string>
+    <string name="show_me">أرني</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="help_amp_support">المساعدة و الدعم</string>
+    <string name="about">ماذا عنك</string>
+    <string name="about_you">معلومات عنك</string>
+    <string name="job_title">المسمى الوظيفي</string>
+    <string name="city_country">مدينة و بلد</string>
+    <string name="living_in">العيش في</string>
+    <string name="example_doctor_engineer">مثال: دكتور ، مهندس…</string>
+    <string name="gender">جنس</string>
+    <string name="photos">صوري</string>
+    <string name="camera">كاميرا</string>
+    <string name="gallery">من هاتف</string>
+    <string name="select_source">اختر مصدر</string>
+    <string name="version_1_0">الإصدار 9.42</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="select_gallery">اختر معرض</string>
+    <string name="toast_image_change_succ_profile">صورتك تغيرت بنجاح</string>
+    <string name="share_nearheart">شارك Nearheart</string>
+    <string name="save">حفظ</string>
+    <string name="you_joined_nearheart_in">لقد انضممت إلى Nearheart</string>
+    <string name="verify_a_phone_number_to_help_secure_your_account">تحقق من رقم الهاتف للمساعدتنا في تأمين حسابك.</string>
+    <string name="share_to">مشاركة مع :</string>
+    <string name="check_out_share">تحقق من Nearheart… إنه يظهر لك من يحبك قريبًا!</string>
+    <string name="rate_nearheart">قيم التطبيق Nearheart</string>
+    <string name="legal">قانوني</string>
+    <string name="numberphone_incorrect">رقم الهاتف الخاص بك غير صحيح</string>
+    <string name="youremial_notvalid">بريدك الالكتروني غير صالح</string>
+    <string name="upda_successfully">تحديث الإعداد بنجاح</string>
+    <string name="application">تطبيق</string>
+    <string name="safety_tips">نصائح السلامة</string>
+    <string name="msg_from_user">رسالة من مستخدم Nearheart</string>
+    <string name="send_mail">ارسل بريد الكتروني…</string>
+    <string name="ther_no_email_send">لا توجد برامج بريد إلكتروني مثبتة.</string>
+    <string name="write_msg_email">اكتب رسالتك هنا</string>
+    <string name="send_us_your_message">ارسل لنا رسالتك</string>
+    <string name="sent_to">ارسل الى :</string>
+    <string name="cancel">إلغاء</string>
+    <string name="unexpected_image">خطأ غير متوقع أثناء تنزيل صورة.</string>
+    <string name="img_uploaded_secc">تم تحميل الصورة بنجاح.</string>
+    <string name="camera_perm_granted">تم منح إذن الكاميرا</string>
+    <string name="fine_location_perm_granted">منح إذن الموقع</string>
+    <string name="camera_perms_denied">تم رفض إذن الكاميرا</string>
+    <string name="fine_location_perms_denied">تم رفض إذن الموقع</string>
+    <string name="secc_upload_photo">نجاح تحميل الصورة</string>
+    <string name="put_it_in_photo_profile">ضعها كصورة الرئيسية</string>
+    <string name="why_you_are_here">لماذا انت هنا</string>
+    <string name="make_new_friends">تكوين صداقات جديدة</string>
+    <string name="date">مواعدة</string>
+    <string name="chat">دردشة</string>
+    <string name="help_you_to_find_the_best">مساعدتك في العثور على الأفضل.</string>
+    <string name="soory_canfind_more_match">لا يوجد شخص جديد حولك أعد المحاولة لاحقًا</string>
+    <string name="sorry_noflocarion">آسف ، لم يتم العثور على موقعك.</string>
+    <string name="age_range">الفئة العمرية</string>
+    <string name="change_your_location">تغيير موقعك</string>
+    <string name="world">العالمية</string>
+    <string name="range_age_info">يستخدم Nearheart هذه التفضيلات لاقتراح التطابقات قد لا تندرج بعض اقتراحات المطابقة ضمن المعلمات المطلوبة.</string>
+    <string name="change_loc_info">تغيير موقع لرؤية أعضاء Nearheart في مدن أخرى.</string>
+    <string name="images_">صور</string>
+    <string name="here_for">هنا من أجل</string>
+    <string name="enable_discsetting">تمكين إعداد الاكتشاف للوصول إلى هذه الميزة.</string>
+    <string name="error">خطأ</string>
+    <string name="must_enable_location">يبدو أن موقع جهازك معطّل ، يجب السماح بالوصول إلى الموقع لاستخدام Nearheart. حاول مرة اخرى</string>
+    <string name="turn_y_location">يرجى تشغيل موقع جهازك.</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="inappropriate_photos">صور غير لائقة</string>
+    <string name="user_is_underage">المستخدم تحت السن القانوني</string>
+    <string name="report_user">أبلغ عن مستخدم</string>
+    <string name="other">آخر</string>
+    <string name="feels_like_spam">يشعر وكأنه البريد المزعج</string>
+    <string name="is_this_person_bothering_you_tell_us_what_they_did">هل هذا الشخص يزعجك؟ أخبرنا ماذا يفعل.</string>
+    <string name="report">تقرير</string>
+    <string name="report_sent">تم ارسال التقرير بنجاح</string>
+    <string name="no_new_likes_someone_may_like_you_soon_so_be_near">شخص ما قد يعجبك قريبًا ، فكن قريبًا منه.</string>
+    <string name="wait_liking">انتظر الإعجاب.</string>
+    <string name="start_liking">بدء الإعجاب.</string>
+    <string name="start_liking_text">عندما تتطابق مع مستخدمين آخرين ، سيظهرون هنا حينها يمكنك مراسلتهم.</string>
+    <string name="send_a_message">ارسل رسالة</string>
+    <string name="try_again">حاول ثانية</string>
+    <string name="searching">يبحث…</string>
+    <string name="ops">حدث خطأ</string>
+    <string name="logout_dialog_titl">تسجيل خروج?</string>
+    <string name="are_you_sure_you_want_to_log_out">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="un18">أنت تحت سن 18.</string>
+    <string name="up70">هذا السن غير متوفر. فوق 70</string>
+    <string name="check_username_digi">لا تستخدم الأرقام في اسم المستخدم.</string>
+    <string name="check_dymbol_username">لا تستخدم الرموز في اسم المستخدم.</string>
+    <string name="terms_of_service_privacy_policy">بنود و سياسة الخصوصية</string>
+    <string name="write_a_message">اكتب رسالة</string>
+    <string name="new_match">مطابقة جديدة</string>
+    <string name="profile">الملف الشخصي</string>
+
+
+    <string name="you_may_lose_your_account_in_case">You may lose your account in case you upload :</string>
+    <string name="i_promise_i_won_t_upload_anything_from_the_pictures_above">I promise I won\'t upload anything from the pictures above</string>
+
+    <string name="upload_image_pp">
+        X صور غير لائقة.
+        \nX صور عنصرية.
+        \nX صور العرق الديني.
+        \nX صور الأسلحة.
+        \nX الصور الإباحية.
+        \nX صور مثيرة.
+        \nX صور العنف.
+        \nX الصور تحتوي على الدم.
+    </string>
+    <string name="upload">رفع</string>
+    <string name="risk_deletaccount">أنت تخاطر بحذف حسابك</string>
+    <string name="warning">تحذير</string>
+
+    <string name = "sign_in_with_facebook"> قم بتسجيل الدخول باستخدام Facebook </string>
+    <string name = "dbauthf"> فشلت مصادقة Facebook. </string>
+    <string name = "athseccfb"> المصادقة بنجاح على Facebook </string>
+    <string name = "lcancl"> إلغاء تسجيل الدخول </string>
+    <string name = "wsin"> في انتظار تسجيل الدخول… </string>
+    <string name = "regsecc"> التسجيل بنجاح </string>
+    <string name = "next"> التالي </string>
+    <string name = "sign_in_with_number_phone"> تسجيل الدخول باستخدام رقم الهاتف </string>
+    <string name = "verify_phone_number"> تحقق من رقم الهاتف </string>
+    <string name = "send"> إرسال </string>
+    <string name = "verify"> تحقق </string>
+    <string name = "verificationcosu"> اكتمل التحقق بنجاح. </string>
+    <string name = "insd"> رمز غير صالح حاول مرة أخرى </string>
+    <string name = "verdff"> التحقق… </string>
+    <string name = "neartpone"> سيرسل Nearheart رسالة SMS للتحقق من رقم هاتفك. أدخل رمز بلدك ورقم هاتفك: </string>
+
+    <string name = "clsucc"> مسح ذاكرة التخزين المؤقت للبيانات بنجاح </string>
+    <string name = "cldataf"> فشل مسح ذاكرة التخزين المؤقت للبيانات </string>
+    <string name = "clear_data_cache"> محو بيانات ذاكرة التخزين المؤقت </string>
+    <string name = "sorphone"> عذرًا ، مصادقة رقم الهاتف لا تعمل على الإصدار التجريبي. </string>
+
+    <string name = "str_search_y_location"> البحث عن موقعك… </string>
+
+
+</resources>

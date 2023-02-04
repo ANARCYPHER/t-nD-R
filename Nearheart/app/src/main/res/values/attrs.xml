@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TvGothamRoundedBold">
+        <attr name="customFontGothamRoundedBold" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TvGothamRoundedMedium">
+        <attr name="customFontGothamRoundedMedium" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="GothamRoundedBook">
+        <attr name="customFontGothamRoundedBook" format="string"/>
+    </declare-styleable>
+
+</resources>

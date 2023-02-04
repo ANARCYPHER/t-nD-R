@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/contact_us"
+        android:textColor="@color/colorGrayPure"
+        android:textSize="16sp" />
+
+
+    <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_box_white_gray"
+        android:text="@string/help_amp_support"
+        android:id="@+id/btnHelpAndSupport"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrayPure" />
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/application"
+        android:textColor="@color/colorGrayPure"
+        android:textSize="16sp" />
+
+
+    <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+        android:id="@+id/btnVoteApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_box_white_gray"
+        android:text="@string/rate_nearheart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrayPure" />
+
+    <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+        android:id="@+id/btnShareApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_box_white_gray"
+        android:text="@string/share_nearheart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrayPure" />
+
+    <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+        android:id="@+id/btnClearDataApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_box_white_gray"
+        android:text="@string/clear_data_cache"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrayPure" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow"
+        android:drawableEnd="@drawable/ic_flesh_right_all"
+        android:drawableRight="@drawable/ic_flesh_right_all"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:text="@string/show_me"
+        android:textColor="@color/colorGrayPure"
+        android:textSize="16sp">
+
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/legal"
+            android:textColor="@color/colorRedBara"
+            android:textSize="16sp" />
+
+
+        <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+            android:id="@+id/btnPrivacyPolicySettingAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box_white_gray"
+            android:text="@string/privacy_policy"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGrayPure" />
+
+
+        <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+            android:id="@+id/btnSafetyTipsSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box_white_gray"
+            android:text="@string/safety_tips"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorGrayPure" />
+
+
+    </LinearLayout>
+
+
+    <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_box_white_gray"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrayPure" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_nearheart" />
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/version_1_0"
+        android:textColor="@color/black_alpha_40" />
+
+</LinearLayout>

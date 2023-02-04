@@ -1,0 +1,39 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_like_newlikes"
+        />
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/new_likes"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorRedBara"
+        android:layout_weight="1"
+        />
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:layout_gravity="center"
+        android:id="@+id/tvAllLikes"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/black_alpha_40"
+        android:drawableRight="@drawable/ic_flesh_right_all"
+        android:drawableEnd="@drawable/ic_flesh_right_all" />
+
+
+</LinearLayout>

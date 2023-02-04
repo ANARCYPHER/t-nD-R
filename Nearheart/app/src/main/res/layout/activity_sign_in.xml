@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".View.SignINActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/icon_nearheart"
+                android:layout_gravity="center"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorGrayPure"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/shadow"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    >
+
+
+                    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/email"
+                        android:textColor="@color/colorRedBara"
+                        android:textSize="16sp" />
+
+
+                    <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtEmail"
+                        android:hint="email@email.com"
+                        android:layout_gravity="center_horizontal"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/colorGry"
+                        android:maxLines="1"
+                        android:theme="@style/editViewSignIN"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/shadow"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    >
+
+
+                    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/password"
+                        android:textColor="@color/colorRedBara"
+                        android:textSize="16sp" />
+
+
+                        <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+                            android:theme="@style/editViewSignIN"
+                            android:id="@+id/edtPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/colorGry"
+                            android:hint="**********"
+                            android:maxLines="1"
+                            android:maxLength="12"
+                            android:textCursorDrawable="@color/black_alpha_40"
+                            />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+
+
+                </LinearLayout>
+
+
+
+                <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/border_ronded_barared"
+                    android:textSize="17sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/btnSignIn"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/don_t_have_a_account"
+                        android:textColor="@color/black_alpha_40"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/colorGrayPure"
+                        android:background="@drawable/border_ronded_yellow"
+                        android:textSize="17sp"
+                        android:padding="20dp"                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:textAllCaps="true"
+                        android:id="@+id/btnGoToSignUp"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

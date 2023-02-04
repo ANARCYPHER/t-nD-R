@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border_white_barared_dialogs"
+    android:padding="25dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select_source"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/colorGrayPure"
+            />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_exit_dialog"
+        android:id="@+id/imgvExitdialogAddMedia"
+        />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_box_white_gray"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/imgvAddPhotoDialogAddMedia"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_select_galery"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gallery"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorGrayPure"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/imgvAddSelfieCamDialogAddMedia"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_device_access_camera"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/camera"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrayPure"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

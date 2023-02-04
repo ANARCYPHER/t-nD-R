@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.SignUPActivity"
+    android:background="@color/colorWhite"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="15dp"
+            >
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_are"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorGrayPure"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:background="@drawable/border_box_barared_gray_highdp"
+                >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgvManSignup"
+                    android:src="@drawable/ic_gender_male_not_selected"
+                    />
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvMen"
+                    android:text="@string/man"
+                    android:checked="true"
+                    android:theme="@style/MyRadioButton"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGrayPure"
+                />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgvWomanSignup"
+                    android:src="@drawable/ic_gender_female_not_selected"
+                    />
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWoman"
+                    android:text="@string/women"
+                    android:theme="@style/MyRadioButton"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGrayPure"
+                />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                >
+
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/age"
+                    android:textColor="@color/colorRedBara"
+                    android:textSize="16sp" />
+
+
+                <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+                    android:theme="@style/editViewSignUP"
+                    android:id="@+id/edtAgeSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="> 18"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:textColor="@color/colorGrayPure"
+                    android:textColorHint="@color/colorGry"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                >
+
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/username"
+                    android:textColor="@color/colorRedBara"
+                    android:textSize="16sp" />
+
+
+                <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+                    android:theme="@style/editViewSignUP"
+                    android:id="@+id/edtUsernameSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="mohamed"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:textColor="@color/colorGrayPure"
+                    android:textColorHint="@color/colorGry"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                >
+
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/email"
+                    android:textColor="@color/colorRedBara"
+                    android:textSize="16sp" />
+
+
+                <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+                    android:id="@+id/edtEmailSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email@email.com"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColorHint="@color/colorGry"
+                    android:textColor="@color/colorGrayPure"
+                    android:theme="@style/editViewSignUP" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                >
+
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/password"
+                    android:textColor="@color/colorRedBara"
+                    android:textSize="16sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint=" "
+                app:counterEnabled="true"
+                app:counterMaxLength="12"
+                app:hintAnimationEnabled="false"
+                app:passwordToggleEnabled="true"
+                >
+
+                <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+                    android:theme="@style/editViewSignUP"
+                    android:id="@+id/edtPassSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="**********"
+                    android:inputType="textPassword"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:textColorHint="@color/colorGry"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cbConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/by_clicking_on_sign_up_you_agree_to"
+                    android:textColor="@color/black_alpha_40"
+                    />
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_of_service_privacy_policy"
+                    android:id="@+id/tvPrivacyPolicySignUP"
+                    android:textColor="@color/black_alpha_40"
+                    android:textAllCaps="true"
+                    android:background="@drawable/shadow_nav_top"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="7dp">
+
+                <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_ronded_yellow"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorGrayPure"
+                    android:textSize="17sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/banner_signup"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--/>-->
+
+
+</LinearLayout>

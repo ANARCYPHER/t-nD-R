@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lyAboutUserProfile"
+        android:background="@drawable/shadow"
+        android:layout_height="wrap_content">
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_about"
+            android:textColor="@color/colorGrayPure"
+            android:drawablePadding="5dp"
+            android:gravity="bottom"
+            android:drawableStart="@drawable/ic_about" />
+
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:id="@+id/tvAboutUserProfile"
+            android:padding="5dp"
+            android:maxLines="3"
+            android:textSize="16sp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black_alpha_40"
+            android:layout_marginStart="25dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shadow"
+        android:layout_height="wrap_content">
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/live_in"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_livein"
+        android:textColor="@color/colorGrayPure"
+        android:drawablePadding="5dp"
+        android:gravity="bottom"
+        android:drawableStart="@drawable/ic_livein" />
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:id="@+id/tvLiveinUserProfile"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black_alpha_40"
+        android:layout_marginStart="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:id="@+id/lyhereforUserProfile"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shadow"
+        android:layout_height="wrap_content">
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/here_for"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_here_for"
+        android:textColor="@color/colorGrayPure"
+        android:drawablePadding="5dp"
+        android:gravity="bottom"
+        android:drawableStart="@drawable/ic_here_for" />
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="16sp"
+        android:id="@+id/tvHerforUserProfile"
+        android:padding="5dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black_alpha_40"
+        android:layout_marginStart="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:id="@+id/lyJobUserProfile"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shadow"
+        android:layout_height="wrap_content">
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/job_title"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_jobtitle"
+            android:textColor="@color/colorGrayPure"
+            android:drawablePadding="5dp"
+            android:gravity="bottom"
+            android:drawableStart="@drawable/ic_jobtitle" />
+
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:id="@+id/tvJobUserProfile"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black_alpha_40"
+            android:layout_marginStart="25dp" />
+
+
+
+    </LinearLayout>
+
+        <!--<com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium-->
+            <!--android:id="@+id/btnReportUser"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/border_box_white_gray"-->
+            <!--android:text="@string/report"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:textColor="@color/colorGrayPure" />-->
+
+
+
+
+</LinearLayout>

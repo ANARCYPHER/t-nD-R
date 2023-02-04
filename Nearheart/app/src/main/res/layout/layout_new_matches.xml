@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+   >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgvUserNewMatches"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/portrait_placeholder"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                android:id="@+id/tvUsernameNewMatches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@string/username"
+                android:textColor="@color/colorGrayPure"
+                android:maxLines="1"
+                android:textSize="16sp"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:textSize="16sp"
+                android:textColor="@color/colorGrayPure"
+
+                />
+
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBook
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:id="@+id/tvAgeUserNewMatches"
+                android:textColor="@color/colorGrayPure"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>

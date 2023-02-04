@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/checked_nav_profile"
+         />
+
+    <item
+        android:id="@+id/navigation_match"
+        android:icon="@drawable/checked_nav_match"
+        />
+
+    <item
+        android:id="@+id/navigation_messages"
+        android:icon="@drawable/checked_nav_messages"
+        />
+
+</menu>

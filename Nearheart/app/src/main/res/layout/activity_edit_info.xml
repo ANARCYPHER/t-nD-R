@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".View.EditInfoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:id="@+id/svEditProfile"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_source"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrayPure"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shadow"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:id="@+id/btnAddPhotoEditInfo"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_select_galery"
+                    />
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gallery"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorGrayPure"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:id="@+id/imgvAddSelfieCamEditInfo"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_device_access_camera"
+                    />
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camera"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorGrayPure"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lyMyPhotosEditInfo"
+            >
+
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photos"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayPure"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMyImagesEditInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shadow"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorGrayPure"
+            />
+
+        <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+            android:theme="@style/editViewSignUP"
+            android:id="@+id/edtUsernameEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shadow"
+            android:hint="@string/username"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:maxLines="3"
+            android:padding="12dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorGrayPure"
+            android:textColorHint="@color/colorGry"
+            />
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorGrayPure"
+        />
+
+    <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+        android:theme="@style/editViewSignUP"
+        android:id="@+id/edtAboutyouEditInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:hint="@string/about_you"
+        android:inputType="textMultiLine"
+        android:maxLength="500"
+        android:padding="12dp"
+        android:maxLines="5"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGrayPure"
+        android:textColorHint="@color/colorGry"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:drawableEnd="@drawable/ic_flesh_right_all"
+            android:drawableRight="@drawable/ic_flesh_right_all"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/show_me"
+            android:textColor="@color/colorGrayPure"
+            android:textSize="16sp">
+
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/why_you_are_here"
+                android:textColor="@color/colorRedBara"
+                android:textSize="16sp" />
+
+            <com.rifcode.nearheart.FontsWidgets.CbGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chat"
+                android:tag="0"
+                android:id="@+id/cbChatEditProfile"
+                android:textColor="@color/colorGrayPure"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.CbGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:tag="1"
+                android:id="@+id/cbDateEditProfile"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorGrayPure"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.CbGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/make_new_friends"
+                android:layout_marginTop="5dp"
+                android:tag="2"
+                android:id="@+id/cbMakeNFEditProfile"
+                android:textColor="@color/colorGrayPure"
+                />
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBook
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_you_to_find_the_best"
+                android:textColor="@color/black_alpha_40"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/job_title"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorGrayPure"
+        />
+
+    <com.rifcode.nearheart.FontsWidgets.EdtGothamRoundedMedium
+        android:theme="@style/editViewSignUP"
+        android:id="@+id/edtJobEditInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shadow"
+        android:hint="@string/example_doctor_engineer"
+        android:inputType="text"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGrayPure"
+        android:textColorHint="@color/colorGry"
+        />
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/living_in"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorGrayPure"
+        />
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:id="@+id/edtLivingInEditInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shadow"
+        android:hint="@string/city_country"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGrayPure"
+        android:textColorHint="@color/colorGry"
+        />
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorGrayPure"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shadow"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgvManEditInfo"
+            android:src="@drawable/ic_gender_male_not_selected"
+            />
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvManEditInfo"
+            android:text="@string/man"
+            android:checked="true"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/colorGrayPure"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgvWomanEditInfo"
+            android:src="@drawable/ic_gender_female_not_selected"
+            />
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvWomanEditInfo"
+            android:text="@string/women"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/colorGrayPure"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

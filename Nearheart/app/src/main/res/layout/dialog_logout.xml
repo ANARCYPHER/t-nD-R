@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border_white_barared_dialogs"
+    android:padding="25dp"
+    >
+
+
+        <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout_dialog_titl"
+            android:textSize="20sp"
+            android:textColor="@color/colorGrayPure"
+            android:layout_weight="1"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:layout_height="wrap_content">
+
+
+    <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBook
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure_you_want_to_log_out"
+        android:textSize="18sp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/black_alpha_40"
+        />
+
+        <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:id="@+id/btnlogoutDialog"
+            android:textAllCaps="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorRedBara"
+            android:background="@drawable/shadow_barared"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

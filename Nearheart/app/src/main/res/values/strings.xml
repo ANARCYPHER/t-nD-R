@@ -1,0 +1,194 @@
+<resources>
+
+<!--  ADS ADMOB -->
+    <string name="BannerAdmobID" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="NativeAdmobID" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="InterstitialAdAdmobID" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+<!--  ADS FACEBOOK -->
+    <string name="NativeAds_Facebook" translatable="false">728146827632560_827238054390103</string>
+    <string name="Interstitial_FacebbokAds" translatable="false">728146827632560_833272517119990</string>
+    <string name="Banner_ads_facebook" translatable="false">IMG_16_9_APP_INSTALL#728146827632560_827277211052854</string>
+
+<!--  LOGIN FACEBOOK -->
+    <string name="facebook_app_id" translatable="false">62626262626</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb62626262626</string>
+
+    <string name="version_1_0">Version 9.42</string>
+
+
+    <string name="app_name" translatable="false">Nearheart</string>
+
+    <string name="sign_in">Log In</string>
+    <string name="sign_up">Sign Up with e-mail</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_a_account">Don\'t have a account ?</string>
+    <string name="you_are">You Are</string>
+    <string name="women">Woman</string>
+    <string name="man">Man</string>
+    <string name="by_clicking_on_sign_up_you_agree_to">By tapping SIGN UP, you agree with our</string>
+    <string name="by_clicking_on_sign_in_you_agree_to">By tapping LOG IN, you agree with our</string>
+    <string name="username">Username</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_media">Add Media</string>
+    <string name="edit_info">Edit Info</string>
+    <string name="settings">Setting</string>
+    <string name="age">Age</string>
+    <string name="new_likes">New Likes</string>
+    <string name="all">All</string>
+    <string name="new_matches">New Matches</string>
+    <string name="messages">Messages</string>
+    <string name="username_already_exist">Username already exist. Choose another</string>
+    <string name="pb_wait_forsignup">Waiting for sign up…</string>
+    <string name="pb_wait_forsignin">Waiting for sign in…</string>
+    <string name="auth_failed">Failed Authentication</string>
+    <string name="auth_success">Authentication Success</string>
+    <string name="help_isEmpty">All entries should be not empty.</string>
+    <string name="help_auth">Your password or email incorrect try again.</string>
+    <string name="help_passwordShould">Password should be at least 6 characters.</string>
+    <string name="help_usernameShould">Username should be at least 6 characters.</string>
+    <string name="help_conditions">Before Sign Up, Do you agree to Terms and Conditions ?</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">Logout</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="discovery_settings">Discovery Settings</string>
+    <string name="live_in">Lives In</string>
+    <string name="show_me">Show Me</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="about">About</string>
+    <string name="about_you">About You</string>
+    <string name="job_title">Job Title</string>
+    <string name="city_country">City, Country</string>
+    <string name="living_in">Living In</string>
+    <string name="example_doctor_engineer">Example: Doctor, Engineer…</string>
+    <string name="gender">Gender</string>
+    <string name="photos">My Photos</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="select_source">Select Source</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="select_gallery">Select Gallery</string>
+    <string name="toast_image_change_succ_profile">Your Image Changing Successfully</string>
+    <string name="share_nearheart">Share Nearheart</string>
+    <string name="save">Save</string>
+    <string name="you_joined_nearheart_in">You joined Nearheart in</string>
+    <string name="verify_a_phone_number_to_help_secure_your_account">Verify a Phone Number to help secure your account.</string>
+    <string name="share_to">Share to:</string>
+    <string name="check_out_share">Check out Nearheart… it shows you who likes you nearby!</string>
+    <string name="rate_nearheart">Rate Nearheart</string>
+    <string name="legal">Legal</string>
+    <string name="numberphone_incorrect">Your Number Phone incorrect</string>
+    <string name="youremial_notvalid">Your Email not valid</string>
+    <string name="upda_successfully">Update setting successfully</string>
+    <string name="application">Application</string>
+    <string name="safety_tips">Safety Tips</string>
+    <string name="msg_from_user">Message from a user Nearheart</string>
+    <string name="send_mail">Send email…</string>
+    <string name="ther_no_email_send">There are no email clients installed.</string>
+    <string name="write_msg_email">Write your message here</string>
+    <string name="send_us_your_message">Send us your message</string>
+    <string name="sent_to">Sent to :</string>
+    <string name="cancel">Cancel</string>
+    <string name="unexpected_image">Unexpected error while downloading an image.</string>
+    <string name="img_uploaded_secc">Image uploaded successfully.</string>
+    <string name="camera_perm_granted">Camera permission granted</string>
+    <string name="fine_location_perm_granted">Location permission granted</string>
+    <string name="camera_perms_denied">Camera permission denied</string>
+    <string name="fine_location_perms_denied">Location permission denied</string>
+    <string name="secc_upload_photo">Success upload photo</string>
+    <string name="put_it_in_photo_profile">Put it in photo profile</string>
+    <string name="why_you_are_here">Why you are here ?</string>
+    <string name="make_new_friends">Make new friends</string>
+    <string name="date">Date</string>
+    <string name="chat">Chat</string>
+    <string name="help_you_to_find_the_best">Help you to find the best.</string>
+    <string name="soory_canfind_more_match">There\'s no one new around you\nTry again later</string>
+    <string name="sorry_noflocarion">Sorry, your location isn\'t found.</string>
+    <string name="age_range">Age Range</string>
+    <string name="change_your_location">Change your location</string>
+    <string name="world">World</string>
+    <string name="range_age_info">Nearheart uses these preferences to suggest matches some match suggestions may not fall within your desired parameters.</string>
+    <string name="change_loc_info">Change your swipe location to see Nearheart members in other cities.</string>
+    <string name="images_">Images</string>
+    <string name="here_for">Here for</string>
+    <string name="enable_discsetting">Enable discovery setting to access this feature.</string>
+    <string name="error">Error</string>
+    <string name="must_enable_location">Your device\'s location seems to be disabled, You need to allow access to location in order to use Nearheart. Please try again</string>
+    <string name="turn_y_location">Please turn your device location.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="inappropriate_photos">Inappropriate Photos</string>
+    <string name="user_is_underage">User is Underage</string>
+    <string name="report_user">Report User</string>
+    <string name="other">Other</string>
+    <string name="feels_like_spam">Feels Like Spam</string>
+    <string name="is_this_person_bothering_you_tell_us_what_they_did">Is this person bothering you? Tell us what they did.</string>
+    <string name="report">Report</string>
+    <string name="report_sent">Report sent successfully</string>
+    <string name="no_new_likes_someone_may_like_you_soon_so_be_near">Someone may like you soon, So be near her.</string>
+    <string name="wait_liking">Wait Liking.</string>
+    <string name="start_liking">Start Liking.</string>
+    <string name="start_liking_text">When you match with other users they\'ll appear here where you can send a message.</string>
+    <string name="send_a_message">Send a message</string>
+    <string name="try_again">Try Again</string>
+    <string name="searching">Searching…</string>
+    <string name="ops">Oops</string>
+    <string name="logout_dialog_titl">Logout?</string>
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
+    <string name="un18">You are under 18.</string>
+    <string name="up70">This age isn\'t available. above 70</string>
+    <string name="check_username_digi">Don\'t use numbers in username.</string>
+    <string name="check_dymbol_username">Don\'t use symbols in username.</string>
+    <string name="terms_of_service_privacy_policy"><![CDATA[Terms of Service & Privacy Policy]]></string>
+    <string name="write_a_message">Type a message</string>
+    <string name="new_match">New match</string>
+    <string name="profile">profile</string>
+
+
+    <string name="you_may_lose_your_account_in_case">You may lose your account in case you upload :</string>
+    <string name="i_promise_i_won_t_upload_anything_from_the_pictures_above">I promise I won\'t upload anything from the pictures above</string>
+
+    <string name="upload_image_pp">
+        X Inappropriate Photos.
+        \nX Racist Photos.
+        \nX Religious Ethnicity Photos.
+        \nX Weapons Photos.
+        \nX Pornographic photos.
+        \nX Sexy photos.
+        \nX Violence Photos.
+        \nX Images contain blood.
+    </string>
+    <string name="upload">Upload</string>
+    <string name="risk_deletaccount">You risk deleting your account</string>
+    <string name="warning">Warning</string>
+
+
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="dbauthf">Facebook Authentication failed.</string>
+    <string name="athseccfb">Authentication with Facebook success.</string>
+    <string name="lcancl">Login Cancel</string>
+    <string name="wsin">Waiting Sign in…</string>
+    <string name="regsecc">Register Successfully</string>
+    <string name="next">Next</string>
+    <string name="sign_in_with_number_phone">Sign in with Number Phone</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+    <string name="send">Send</string>
+    <string name="verify">Verify</string>
+    <string name="verificationcosu">Verification Completed Successfully.</string>
+    <string name="insd">Invalid Code try again</string>
+    <string name="verdff">Verification…</string>
+    <string name="neartpone">Nearheart will send an SMS message to verify your phone number. Enter your country code and phone number :</string>
+
+    <string name="clsucc">Clear Data Cache Successfully</string>
+    <string name="cldataf">Clear Data Cache Failed</string>
+    <string name="clear_data_cache">Clear Data Cache</string>
+    <string name="sorphone">Sorry Phone Number Authentication not Working on Demo Version.</string>
+
+    <string name="str_search_y_location">Searching for your location…</string>
+
+</resources>

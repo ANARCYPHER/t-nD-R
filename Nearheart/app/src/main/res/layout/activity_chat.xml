@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGryFix"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/chat_custom_bar" android:id="@+id/bar_chat"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rclViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:clipToPadding="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <include layout="@layout/layout_write_message"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adAdmobBannerChat"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/BannerAdmobID">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

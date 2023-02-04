@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.rifcode.nearheart.View.AddPicActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <com.rifcode.nearheart.Utils.SquareImageView
+                    android:id="@+id/imgvdisplayAddpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/pbLoadImageAddPic"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgvdisplayAddpic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imgvdisplayAddpic"
+                    app:layout_constraintTop_toTopOf="@+id/imgvdisplayAddpic" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.rifcode.nearheart.FontsWidgets.CbGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:padding="8dp"
+                android:text="@string/put_it_in_photo_profile"
+                android:id="@+id/cbPutInphotoProfile"
+                android:textAllCaps="false"
+                android:textColor="@color/colorGrayPure" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="18dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                    android:id="@+id/btnCancelAddPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_ronded_white"
+                    android:text="@string/cancel"
+                    android:textAllCaps="true"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorGrayPure" />
+
+            <com.rifcode.nearheart.FontsWidgets.BtnGothamRoundedMedium
+                android:id="@+id/btnSaveImageAddPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_ronded_barared"
+                android:text="@string/save"
+                android:layout_margin="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

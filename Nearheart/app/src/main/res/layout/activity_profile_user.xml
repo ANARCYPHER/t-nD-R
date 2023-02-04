@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".View.ProfileUserActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:id="@+id/scrollVProfileUser"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgvPhotoUserProfile"
+                android:layout_height="400dp"
+                android:layout_width="match_parent"
+                android:src="@drawable/portrait_placeholder"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="15dp"
+                app:riv_mutate_background="true"
+                android:visibility="visible"
+                app:riv_oval="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginTop="8dp"
+                >
+
+
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:id="@+id/tvUsernameProfileUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayPure"
+                    android:textSize="32sp"
+                    android:text="@string/username" />
+
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=", "
+                    android:textSize="32sp"
+                    android:textColor="@color/colorGrayPure"
+                    />
+
+
+                <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedBook
+                    android:id="@+id/tvAgeProfileUser"
+                    android:textSize="32sp"
+                    android:textColor="@color/colorGrayPure"
+                    android:gravity="center"
+                    android:text="--"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/lyYehOrNotProfileUser"
+                android:background="@drawable/shadow_barared_matches"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_swipe_left"
+                    android:layout_weight="1"
+                    android:id="@+id/imgvdisLikeProfileUser"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_warning_user"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:id="@+id/btnReportUser"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_send_message"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:id="@+id/imgvSendMsgProfileUser"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_swipe_right"
+                    android:layout_weight="1"
+                    android:id="@+id/imgvLikeProfileUser"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:id="@+id/lyimagestitleProfileuser"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shadow"
+            android:layout_height="wrap_content">
+
+            <com.rifcode.nearheart.FontsWidgets.TvGothamRoundedMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/images_"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_here_for"
+                android:textColor="@color/colorGrayPure"
+                android:drawablePadding="5dp"
+                android:gravity="bottom"
+                android:drawableStart="@drawable/ic_photos_users" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImagesProfUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:background="@drawable/shadow"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+            <include layout="@layout/layout_user_profile_continue"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
